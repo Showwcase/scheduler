@@ -1,0 +1,13 @@
+{
+  "compileOnSave": true,
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": { "outDir": "dist", "pretty": true },
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules", "./dist"]
+  },
+  "include": ["./src/*"],
+  "exclude": ["node_modules", "dist"],
+  "ts-node": {
+    "swc": true
+  }
+}
